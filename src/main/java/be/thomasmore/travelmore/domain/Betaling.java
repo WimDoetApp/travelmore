@@ -12,7 +12,7 @@ public class Betaling {
 
     @ManyToOne
     private BetalingsMethoden betalingsMethode;
-    @OneToOne(mappedBy = "betaling")
+    @OneToOne
     private Boeking boeking;
 
     //getters, setters
