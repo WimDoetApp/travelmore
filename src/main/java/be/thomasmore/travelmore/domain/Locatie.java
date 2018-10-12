@@ -9,8 +9,9 @@ import javax.persistence.Table;
 @Table(name="locatie")
 public class Locatie {
 
+    //attributen
     @Id
-    private int id;
+    private int locatieID;
     @Column(name = "land")
     private String land;
     @Column(name = "adres")
@@ -20,12 +21,13 @@ public class Locatie {
     @Column(name = "gemeente")
     private String gemeente;
 
+    //getters, setters
     public int getId() {
-        return id;
+        return locatieID;
     }
 
     public void setId(int id) {
-        this.id = id;
+        this.locatieID = id;
     }
 
     public String getLand() {
